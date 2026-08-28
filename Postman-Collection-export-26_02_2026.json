@@ -1,0 +1,912 @@
+{
+  "info": {
+    "_postman_id": "8fe0f32f-a5a2-4827-9745-a36e9b92568b",
+    "name": "Container",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "id": "6d98fa55-f830-4a7c-87fb-1bb1503b0e72",
+      "name": "auth api",
+      "item": [
+        {
+          "id": "fab91f8c-c577-4c97-94a1-0c2ae2419924",
+          "name": "checkauth",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE}}/api/auth/check-auth",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "check-auth"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "a8b0c345-4ea0-4a3f-9516-3f0145aa28a7",
+          "name": "forgot-password",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"dipanshukumarxyz@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/auth/forgot-password",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "forgot-password"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "3146e030-3f7c-4835-8ee0-daa86c3a0afe",
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"identifier\": \"dipanshukumarxyz@gmail.com\",\r\n    \"password\": \"deep@123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/auth/login",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "e063aaed-126b-4324-9940-647debd14350",
+          "name": "logout",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{BASE}}/api/auth/logout",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "logout"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "9d06cb66-be6b-4a5b-bd51-3b71026ec783",
+          "name": "register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"dipanshukumar.0025@gmail.com\",\r\n    \"name\": \"yaya\",\r\n    \"password\": \"yaya@123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/auth/signup",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "signup"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "173d0910-e4e6-493f-9c91-c5da7906514a",
+          "name": "resetpasword",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"password\": \"Deep@123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/auth/reset-password/d61979aae9af5077475a5b7f2743caaefa9145db",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "reset-password",
+                "d61979aae9af5077475a5b7f2743caaefa9145db"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "b1ddb5bd-c2fb-4b75-9d2c-4885b0a131cb",
+          "name": "updateinfo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "",
+              "host": [],
+              "path": [],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "e188bdc7-14f6-44b8-bb64-f39d2c33c7b1",
+          "name": "uploadavatar",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "avatar",
+                  "disabled": false,
+                  "type": "file",
+                  "value": "/C:/Users/Deep/Pictures/Container_edit.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{BASE}}/api/auth/upload-avatar",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "upload-avatar"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "e31e81e5-492e-4458-aba6-369fbede31a9",
+          "name": "verifyemail",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"392942\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/auth/verify-email",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "verify-email"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "variable": [
+        {
+          "id": "26a297c5-ba48-4cf3-8c43-fc35e14f0f39",
+          "key": "BASE",
+          "value": "",
+          "type": "default"
+        }
+      ]
+    },
+    {
+      "id": "c24ba015-e135-4d52-8ea7-ebb448db82dc",
+      "name": "Drive api",
+      "item": [
+        {
+          "id": "bbefe811-e78e-4d25-acf8-14b2cee19e32",
+          "name": "getDrives",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/drives/",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "drives"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "3a03efa9-e51d-45c7-9ed9-6f9ba5318796",
+          "name": "setDrive",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/drives/",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "drives"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "0e257a68-f099-402b-8d1a-01e431726b32",
+          "name": "setActive",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/drives/set-active/699c6f33436cdc416389844c",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "drives",
+                "set-active",
+                "699c6f33436cdc416389844c"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "c9ac956c-36f3-4697-b668-0f7fe81d25eb",
+          "name": "rename Disk",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Disk 1\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/drives/rename/699c6f33436cdc416389844c",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "drives",
+                "rename",
+                "699c6f33436cdc416389844c"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "dc3eb04d-060a-44c6-98ad-97a50e83a3f8",
+          "name": "delete Drive",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/drives/delete/699c6f33436cdc416389844c",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "drives",
+                "delete",
+                "699c6f33436cdc416389844c"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "263f403f-4b0d-4b59-abca-f1d805fba7d5",
+          "name": "getHealth",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/drives/health",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "drives",
+                "health"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "variable": []
+    },
+    {
+      "id": "d428e2ff-a3ec-42b6-b37e-6c9222ae1b44",
+      "name": "File api",
+      "item": [
+        {
+          "id": "98886409-5d80-4881-b385-207899f8ac03",
+          "name": "deletefile",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{BASE}}/api/files/delete/698728d14056e4dd47f4a8f3",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "files",
+                "delete",
+                "698728d14056e4dd47f4a8f3"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "da6cfbd5-86c4-4960-a812-5913a0d027cf",
+          "name": "delete-all",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ids\": [\r\n     \"69872a544056e4dd47f4a906\",\r\n     \"698728d14056e4dd47f4a8f4\"\r\n  ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/files/delete-all",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "files",
+                "delete-all"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "7edb3b4d-d855-4714-aa4a-81643b457e8c",
+          "name": "downloadfile",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE}}/api/files/download/698728d14056e4dd47f4a8f3",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "files",
+                "download",
+                "698728d14056e4dd47f4a8f3"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "cf35764c-8cbf-4991-88fb-a966f0d0d681",
+          "name": "download-all",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"ids\": [\r\n        \"69872a544056e4dd47f4a906\",\r\n        \"698728d14056e4dd47f4a8f4\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/files/download-all",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "files",
+                "download-all"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "29c05afe-4a04-4091-82fe-dc2e4989c8b3",
+          "name": "getfiles",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE}}/api/files",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "files"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "4ccd04da-5eea-4dc8-8a9f-7d3f45a6ae54",
+          "name": "movefiles",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fileIds\": [\n    \"698735ce0b6e20230958835c\"\n  ],\n  \"folderId\": \"69889a342714eb7287ca99b3\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/files/move",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "files",
+                "move"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "734cb765-4072-4b03-a492-6b90f293133b",
+          "name": "previewfile",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE}}/api/files/preview/699c7169436cdc416389845e",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "files",
+                "preview",
+                "699c7169436cdc416389845e"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "9b82a882-99ac-41ae-ba76-262f27c3db61",
+          "name": "renamefile",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"newName\": \"forest.jpeg\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/files/rename/698728d14056e4dd47f4a8f3",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "files",
+                "rename",
+                "698728d14056e4dd47f4a8f3"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "d52e1c1e-1246-42a8-be8d-ee7bc7d314f9",
+          "name": "setfavorite",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"698735ce0b6e20230958835c\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/files/set-favorite",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "files",
+                "set-favorite"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "bc547e91-7941-4668-9b8e-7e61efbb4467",
+          "name": "uploadfiles",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "files",
+                  "disabled": false,
+                  "type": "file",
+                  "src": "C:\\Users\\Deep\\Downloads\\stack_addressing.webp",
+                  "value": "stack_addressing.webp"
+                },
+                {
+                  "key": "parentId",
+                  "disabled": false,
+                  "type": "text",
+                  "value": "69a068fd9eb1b5edd9610043"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{BASE}}/api/files/upload",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "files",
+                "upload"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "bbf2a68b-35e7-4c64-8129-a4016e047530",
+          "name": "trashFile",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/files/trash/699dc462768b9ad57b69ef07",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "files",
+                "trash",
+                "699dc462768b9ad57b69ef07"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "variable": []
+    },
+    {
+      "id": "0ae3a16e-00ea-4410-bd79-64c3f1a5bef1",
+      "name": "Folder api",
+      "item": [
+        {
+          "id": "b9f8620b-9916-4c08-9f58-7d1945464565",
+          "name": "create folder",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"folderName\": \"images\",\n    \"parentId\": \"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/folders/create",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "folders",
+                "create"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "99dce76a-804c-42ee-9e1b-1b8049d36bbe",
+          "name": "delete folder",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ids\": [\n    \"69a0694f9eb1b5edd961005d\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/folders/delete/",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "folders",
+                "delete"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "c0c70107-081e-494b-9e7d-dea527827714",
+          "name": "getChoicefolders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE}}/api/folders/",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "folders"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "810816b2-8230-4e4b-9da8-c61f760f20cb",
+          "name": "get folders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE}}/api/folders",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "folders"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "48c308d7-5d1a-4a44-a2df-cc534c31705f",
+          "name": "rename folder",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"newName\": \"pictures\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE}}/api/folders/rename/698941ff05e15340f4c03469",
+              "host": [
+                "{{BASE}}"
+              ],
+              "path": [
+                "api",
+                "folders",
+                "rename",
+                "698941ff05e15340f4c03469"
+              ],
+              "protocol": "https"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "e64d5e35-a494-478a-8d90-6357f35f57e3",
+          "name": "trashFolders",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ids\": [\n    \"69a069079eb1b5edd9610047\",\n    \"69a0694f9eb1b5edd961005d\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/folders/trash",
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "folders",
+                "trash"
+              ],
+              "protocol": "http"
+            }
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "variable": []
+    }
+  ]
+}
