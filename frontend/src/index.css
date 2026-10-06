@@ -53,3 +53,22 @@
 .animate-slide-up {
   animation: slide-up 0.25s ease-out;
 }
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.custom-grid {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 0
+  );
+
+  background-size: 30px 30px;
+}

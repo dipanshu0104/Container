@@ -64,10 +64,10 @@ export default function EditDriveModal({
         <div className="p-6">
           {/* Header */}
           <div className="flex items-start gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-yellow-500/10 border border-yellow-500/20 flex items-center justify-center">
               <HardDrive
                 size={18}
-                className="text-blue-400"
+                className="text-yellow-400"
               />
             </div>
 
@@ -270,11 +270,11 @@ export default function EditDriveModal({
                   py-1.5
                   px-4
                   rounded-lg
-                  bg-[#0b8fff]
+                  bg-yellow-500
                   text-white
                   text-sm
                   font-medium
-                  hover:bg-[#1c9cff]
+                  hover:bg-yellow-600
                   transition
                 "
               >
